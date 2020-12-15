@@ -175,8 +175,36 @@ input:checked + .slider::before {
   .price-comparison {
     display: block;
   }
+  * {
+    box-sizing: unset;
+  }
   .card {
-    width: 50vh;
+    width: 55vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .professional {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-size: 30%;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+  }
+  .price-comparison {
+    display: block;
+  }
+  .card {
+    width: 35vh;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
